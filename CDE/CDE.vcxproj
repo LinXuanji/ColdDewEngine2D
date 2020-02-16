@@ -103,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CD_PLATFORM_WINDOWS;CD_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CDE\vendor\spdlog-1.x\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,6 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CD_PLATFORM_WINDOWS;CD_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CDE\vendor\spdlog-1.x\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,13 +144,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\CD\Log.h" />
     <ClInclude Include="src\CD\Entrypoint.h" />
-    <ClInclude Include="src\CD\Game.h" />
+    <ClInclude Include="src\CD\App.h" />
     <ClInclude Include="src\CD.h" />
     <ClInclude Include="src\CD\Core.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CD\Game.cpp" />
+    <ClCompile Include="src\CD\Log.cpp" />
+    <ClCompile Include="src\CD\App.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

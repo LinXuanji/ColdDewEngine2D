@@ -3,16 +3,16 @@
 
 namespace cde {
 
-	class CD_API Game
+	class CD_API App
 	{
 	public:
-		Game();
-		virtual ~Game();
+		App();
+		virtual ~App();
 
 		void Start();
 	};
 
-	Game* CreateGame();
+	App* CreateApp();
 
 }
 

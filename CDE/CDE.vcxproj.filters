@@ -21,15 +21,21 @@
     <ClInclude Include="src\CD\Core.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\CD\Game.h">
+    <ClInclude Include="src\CD\Entrypoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\CD\Entrypoint.h">
+    <ClInclude Include="src\CD\Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CD\App.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CD\Game.cpp">
+    <ClCompile Include="src\CD\Log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CD\App.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

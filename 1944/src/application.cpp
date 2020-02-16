@@ -1,6 +1,6 @@
 #include <CD.h>
 
-class Tank :public cde::Game {
+class Tank :public cde::App {
 public:
 	Tank()
 	{
@@ -12,7 +12,7 @@ public:
 	}
 };
 
-cde::Game* cde::CreateGame()
+cde::App* cde::CreateApp()
 {
 	return new Tank();
 }
